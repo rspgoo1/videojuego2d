@@ -1,0 +1,41 @@
+body {
+  background: url("assets/background.png") no-repeat center center fixed;
+  background-size: cover;
+  cursor: url("assets/cursor.png") 16 16, auto;
+  overflow: hidden;
+}
+
+canvas {
+  background-color: rgba(0, 0, 0, 0.45);
+  border: 3px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+}
+
+#score {
+  font-size: 1.5rem;
+  color: #ffcc00;
+  text-shadow: 0 0 10px #ff9900, 0 0 20px #ffaa00;
+  z-index: 10;
+}
+
+#infoBox {
+  width: 220px;
+  backdrop-filter: blur(8px);
+  border: 2px solid #ffcc00;
+}
+
+#infoBox ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#infoBox li::before {
+  content: "👻 ";
+  color: #ffcc00;
+}
+
+footer {
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
